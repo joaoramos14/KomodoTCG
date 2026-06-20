@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Komodo TCG - Contato</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/Logo.png" alt="Logo Komodo TCG" class="logo-img">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="contato.html" class="ativo">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<section>
+			<div class="container">
+				<h2>Fale conosco</h2>
+
+				<div id="mensagem-sucesso" class="mensagem-sucesso escondida">
+					Sua mensagem foi enviada com sucesso.
+				</div>
+
+				<form id="form-contato" class="formulario-contato">
+
+					<fieldset>
+						<legend>Dados de contato</legend>
+
+						<div class="campo-grupo">
+							<label for="email">E-mail</label>
+							<input type="text" id="email" name="email" placeholder="seuemail123@exemplo.com">
+							<div class="mensagem-erro" id="erro-email"></div>
+						</div>
+
+						<div class="campo-grupo">
+							<label for="tipo-solicitacao">Tipo de solicitação</label>
+							<select id="tipo-solicitacao" name="tipoSolicitacao">
+								<option value="">Selecione uma opção</option>
+								<option value="servico">Serviço</option>
+								<option value="duvida">Dúvida</option>
+							</select>
+							<div class="mensagem-erro" id="erro-tipo-solicitacao"></div>
+						</div>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Mensagem</legend>
+
+						<div class="campo-grupo">
+							<label for="assunto">Assunto</label>
+							<input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
+							<div class="mensagem-erro" id="erro-assunto"></div>
+						</div>
+
+						<div class="campo-grupo">
+							<label for="conteudo">Mensagem</label>
+							<textarea id="conteudo" name="conteudo" rows="6" placeholder="Digite sua mensagem"></textarea>
+							<div class="mensagem-erro" id="erro-conteudo"></div>
+						</div>
+
+					</fieldset>
+
+					<button type="submit" id="btn-enviar" class="botao">Enviar</button>
+
+				</form>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>© 2026 Komodo TCG. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="js/contato.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Komodo TCG - Catálogo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/Logo.png" alt="Logo Komodo TCG" class="logo-img">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="catalogo.html" class="ativo">Catálogo</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<section>
+			<div class="container">
+				<h2>Catálogo de cartas</h2>
+
+				<div class="filtros">
+					<div class="grupo-filtro">
+						<label for="busca">Buscar carta</label>
+						<input type="text" id="busca" placeholder="Digite o nome da carta">
+					</div>
+
+					<div class="grupo-filtro">
+						<label for="filtro-tipo">Tipo</label>
+						<select id="filtro-tipo">
+							<option value="todos">Todos</option>
+							<option value="fogo">Fogo</option>
+							<option value="agua">Água</option>
+							<option value="planta">Planta</option>
+							<option value="eletrico">Elétrico</option>
+						</select>
+					</div>
+
+					<div class="grupo-filtro">
+						<label for="filtro-raridade">Raridade</label>
+						<select id="filtro-raridade">
+							<option value="todas">Todas</option>
+							<option value="comum">Comum</option>
+							<option value="rara">Rara</option>
+							<option value="ultra-rara">Ultra rara</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="cartas-container">
+
+					<article class="carta fogo rara">
+						<div class="carta-imagem">
+							<img src="img/charizard.png" alt="Carta Charizard">
+						</div>
+						<h3>Charizard</h3>
+						<p class="raridade">Rara</p>
+						<p>Tipo: Fogo</p>
+					</article>
+
+					<article class="carta agua comum">
+						<div class="carta-imagem">
+							<img src="img/squirtle.png" alt="Carta Squirtle">
+						</div>
+						<h3>Squirtle</h3>
+						<p class="raridade">Comum</p>
+						<p>Tipo: Água</p>
+					</article>
+
+					<article class="carta planta comum">
+						<div class="carta-imagem">
+							<img src="img/bubasaur.png" alt="Carta Bulbasaur">
+						</div>
+						<h3>Bulbasaur</h3>
+						<p class="raridade">Comum</p>
+						<p>Tipo: Planta</p>
+					</article>
+
+					<article class="carta eletrico ultra-rara">
+						<div class="carta-imagem">
+							<img src="img/pikachu.png" alt="Carta Pikachu">
+						</div>
+						<h3>Pikachu</h3>
+						<p class="raridade">Ultra rara</p>
+						<p>Tipo: Elétrico</p>
+					</article>
+
+					<article class="carta agua comum">
+						<div class="carta-imagem">
+							<img src="img/gyarados.png" alt="Carta Gyarados">
+						</div>
+						<h3>Gyarados</h3>
+						<p class="raridade">Comum</p>
+						<p>Tipo: Água</p>
+					</article>
+
+					<article class="carta fogo ultra-rara">
+						<div class="carta-imagem">
+							<img src="img/vulpix.jpg" alt="Carta Vulpix">
+						</div>
+						<h3>Vulpix</h3>
+						<p class="raridade">Ultra rara</p>
+						<p>Tipo: Fogo</p>
+					</article>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>© 2026 Komodo TCG. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="js/catalogo.js"></script>
+
+</body>
+</html>
