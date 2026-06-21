@@ -37,4 +37,4 @@ Todas as páginas compartilham o mesmo arquivo de estilo (`style.css`) e o mesmo
 - João Henrique Ramos
 - Erick Yuri Maba Silva
 
-# [Link para acesso ao GitHub Pages](https://joaoramos14.github.io/KomodoTCG/index.html)
+## [Link para acesso ao GitHub Pages](https://joaoramos14.github.io/KomodoTCG/index.html)
